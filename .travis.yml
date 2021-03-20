@@ -5,5 +5,7 @@ services:
 before_install:
   - docker build -t pranayreddocker/docker-react -f Dockerfile.dev . 
 
+language: generic
+
 script:
-  - docker run pranayreddocker/docker-react npm run test -- --coverage
+  - docker run -e CI=true pranayreddocker/docker-react npm run test

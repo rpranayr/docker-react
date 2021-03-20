@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Text has changed! Woohoo
+          Text has changed! Woohoo, now trying travis CI
         </p>
         <a
           className="App-link"
